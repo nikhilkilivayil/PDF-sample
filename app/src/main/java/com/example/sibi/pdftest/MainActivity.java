@@ -25,13 +25,13 @@ import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
-    String myPdfUrl="http://www.axmag.com/download/pdfurl-guide.pdf";
+    String myPdfUrl="http://yeng.in/Syllabus/B.tech/S1/Chemistry/CY100_Chemistry.PDF";
     PDFView pdfView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-pdfView= (PDFView) findViewById(R.id.pdfView);
+    pdfView= (PDFView) findViewById(R.id.pdfView);
 
 new RetrievePDFStream().execute(myPdfUrl);
 
